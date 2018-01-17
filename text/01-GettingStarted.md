@@ -41,395 +41,357 @@
 		- [Parenting and Grouping](#Parenting_and_Grouping)
 		- [Backward Compatibility](#Backward_Compatibility)
 	- [Onward](#Onward)
+# Chapter 1: Getting Started
 
-# Chapter 1: Getting Started <a id="Chapter_1_Getting_Started"></a>
-Here is something you don't know about Mike. He has read more Linux books than he cares to admit. Unfortunately, Mike rarely makes it past chapter 2. Given that the first two chapters usually contain nothing more than a warm introduction and a history of the software, this practice has two profound consequences. The first is that Mike can articulate the history of Linux far better than almost anyone. The second is that he still does not know how to actually use Linux. Granted, the former happens to be far more useful at a party than knowing the difference between "tar cvfz" and "lshw."
+Ada satu hal yang anda tidak tahu tentang Mike (`salah satu penulis buku ini`). Dia memiliki buku Linux lebih banyak dari yang dia tahu. Sayangnya, Mike jarang membaca lebih dari bab 2. Hal tersebut karena dua bab pertama biasanya hanya ada perkenalan dan sejarah dari software yang dibahas. Ada dua konsekuensi dari gaya penulisan seperti ini. Pertama, Mike menceritakan sejarah Linux jauh lebih baik daripada orang lain. Kedua dia masih belum bisa bagaimana sebenarnya cara menggunakan Linux. Untungnya, konsekuensi pertama jauh lebih menguntungkan saat *party* dibanding mengetahui perbedaan "tar cvfz" dan "lshw".
 
-In keeping with this tech book tradition, this book won't be any different. In this chapter, you will learn Blender's rich history and be introduced to the very basics of this application.
+Untuk menjaga tradisi, buku ini akan tetap ditulis menggunakan gaya yang sama. Di bab ini kita akan belajar sejarah Blender yang menarik disertai dengan pengenalan akan dasar-dasar cara penggunaan Blender. 
 
-## An Origin Story <a id="An_Origin_Story"></a>
+## An Origin Story
 
-It was the mid-1990s, and the personal computer was taking off faster than anyone had anticipated. With it, there arose the advent of animated graphics and 3D games.
+Waktu itu saat pertengahan 1990-an dan popularitas *personal computer* meroket lebih cepat dibandingkan prediksi. Bersamaan dengan meningkatnya popularitas *personal computer*, teknologi *animated graphics* dan *3D games* juga ikut meningkat pesat. 
 
-### Blender Begins <a id="Blender_Begins"></a>
-It was at this ripe time that Blender came into being. Blender started off as an in-house 3D animation software created by a small Dutch animation studio called NeoGeo. Perhaps it was because of the lack of a cheap and capable substitute; perhaps it was due to sheer ambition, NeoGeo decided to create its own animation software from scratch rather than using what was available. The chief programmer of Blender was *Ton Roosendaal*, who was responsible for writing a large part of the core Blender functionalities.
+### Blender Begins
 
-For the next few years, Blender remained the internal tool of a very successful animation studio. The software became so good that in 1998, Blender was made available to the public. A new company, Not a Number (NaN), was formed to oversee the development and distribution of Blender. Largely via the Internet, Blender was distributed as two separate versions: a free version with limited functionality and a version that was not free (called Blender Publisher) that had a few additional features. Being the only complete 3D animation and game creation package available for free at a time when computer graphics was still in its infancy, Blender started gaining popularity, and many online communities developed that allowed artists to share knowledge and their work.
+Blender memulai sejarahnya sebagai software animasi 3D yang dibuat oleh sebuah perusahaan animasi kecil asal Belanda bernama NeoGeo. Mungkin karena belum adanya software animasi 3D yang murah dan mampu menjadi pengganti software yang sudah ada, atau mungkin juga karena ambisi NeoGeo yang ingin memiliki software animasi sendiri yang membuat mereka memutuskan untuk menelurkan Blender dari nol daripada menggunakan yang sudah ada. Programmer utama Blender saat itu adalah *Ton Roosendaal,* yang bertanggung jawab untuk menulis bagian utama fungsionalitas Blender.
 
-![Left: Blender 1.6. Right: Blender 2.65](../figures/Chapter1/Fig01-01.jpg)
+Sampai beberapa tahun berikutnya, Blender hanya dipakai sebagai aplikasi internal sebuah perusahaan animasi yang amat sukses. Karena menjadi software yang sangat bagus, maka di tahun 1998 Blender mulai diperkenalkan ke publik. Sebuah perusahaan baru , Not a Number (NaN), dibuat untuk mengawasi perkembangan dan ditribusi Blender. Distribusinya dilakukan melalui dua versi yang berbeda: sebuah versi gratis dengan fungsi terbatas dan sebuah versi dengan fungsi utuh yang tidak gratis (bernama Blender Publisher). Dengan menjadi satu-satunya software animasi 3D yang lengkap dengan paket untuk membuat game yang tersedia gratis membuat popularitas Blender meningkat dan banyak komunitas online yang membantu artis membagikan pengetahuan dan hasil karyanya.
 
-###  The Dark Nights <a id="The_Dark_Nights"></a>
-Alas, with the collapse of the Internet bubble and some other unfortunate circumstances, Not a Number (NaN) filed for bankruptcy in 2002. Since Blender was the intellectual property of the company at the time, dissolving the company meant an uncertain future for Blender. The Blender community did not want to see their favorite software go down with NaN. So a deal was struck in which NaN would release the source code of Blender to the public for a payment of €100,000. A "Free the Blender" fundraising campaign was started. The online community responded very generously. A few months later, enough money was collected to convince NaN to re-release Blender as an open source software to the newly established Blender Foundation. The foundation was created specifically to manage the now open source Blender. Ton Roosendaal, the original creator of Blender, heads the foundation.
+[![Left: Blender 1.6. Right: Blender 2.65](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-01.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-01.jpg)
 
-### Blender Rises <a id="Blender_Rises"></a>
-Located in beautiful Amsterdam, the Blender Foundation now oversees the development, distribution, and marketing of Blender. But because of the open source nature of the software, its development has been driven largely by volunteer contributors from across the world.
+### The Dark Nights
 
-The Blender Foundation also created the Blender Institute, an animation and game studio that focuses on movie and game development using Blender. The Institute produced the movies _Elephants Dream_, _Big Buck Bunny_, _Sintel_, _Tears of Steel_, Cosmos Laundromat and the game _Yo, Frankie!_ These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, and the end result also serves as an advertisement for the software itself.
+Sayang, bersamaan dengan terjadinya *Internet bubble* dan keadaan lain yang kurang menguntungkan, Not a Number (NaN) diumumkan bangkrut pada tahun 2002. Karena Blender merupakan hak kekayaan intelektual milik perusahaan tersebut mengakibatkan masa dengan yang suram bagi aplikasi animasi 3D ini. Melihat kondisi seperti ini, komunitas Blender tidak ingin aplikasi kesayangan mereka jatuh bersama dengan NaN. Oleh karena itu, sebuah kesepakatan dibuat dimana NaN akan merilis source code Blender ke publik dengan bayaran €100,000. Penggalangan dana bernama "Free the Blender" dimulai. Komunitas online merespon dengan baik hati. Beberapa bulan kemudian, uang yang berhasil dikumpulkan diberikan kepada NaN dan memindah tangankan software ini sebagai open source software ke Blender Foundation. Blender Foundation merupakan yayasan yang dibuat khusus untuk mengawasi perkembangan Blender dengan Ton Roosendaal sebagai ketuanya. 
 
-![Top: Elephants Dream, Big Buck Bunny, Yo, Frankie!, Bottom:  Sintel, Tears of Steel, Cosmos Laundromat](../figures/Chapter1/Fig01-02.jpg)
+### Blender Rises
 
-Then came Blender 2.5, which changed much of how Blender looked and behaved. This refactoring, as it was called, took years of planning and coding. Blender 2.5 marks a significant milestone in the history of Blender. For users coming from the Blender 2.4x series, the entire interface looks radically different: menus items are rearranged, keyboard shortcuts are altered, even the default color scheme has changed from a boring gray to a slightly less boring shade of gray.  Blender 2.5 is designed to be more intuitive, faster to use, and easier to learn than its predecessor.
+Berlokasi di Amsterdam yang indah, Blender Foundation kini mengawal pengembangan, distribusi, dan pemasaran dari Blender. Namun, karena sifat *open source*-nya, pengembangan Blender sebagian besar dilakukan oleh kontributor sukarela dari seluruh dunia.
 
-Blender uses the Python programming language for scripting. With Python, you can customize the behavior of Blender, extend its functionality, and, more importantly, control the game engine. Knowing how to program is not a requirement for using Blender, but knowing Python will make you a far more capable game-maker.
+Blender Foundation juga membuat Blender Institute, sebuah studio animasi dan game yang fokus membuat film dan game menggunakan Blender. Blender Institute sudah memproduksi film berjudul *Elephants Dream, Big Buck Bunny, Sintel, Tears of Steel, Comos Laundromat* dan game *Yo, Frankie!* Proyek-proyek ini memiliki dua tujuan utama: proses produksi film dan game ini untuk menguji Blender di lingkungan studio yang nyata serta menunjukkan hasil kerjanya sebagai sarana pembukti kemampuan Blender itu sendiri (iklan).
 
-<img alt="Blender Commit statistics form 2003 to 2012" src="../figures/Chapter1/Fig01-03.png" width="50%" align="left">
-The year 2012 marked the tenth anniversary of Blender going open source. During these 10 years of open source development, more than 150 people have contributed something to the source code, totaling 50,000 contributions ("commits," in SVN techno-jargon), averaging nearly 30 commits every day over the past year. Needless to say, the program has improved much over the years, and it shows no sign of slowing down. The image below shows the Blender development statistics gathered from the official SVN repository including Blender trunk all its branches.
+[![Top: Elephants Dream, Big Buck Bunny, Yo, Frankie!, Bottom:  Sintel, Tears of Steel, Cosmos Laundromat](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-02.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-02.jpg)
 
-Of course, software exists to serve the users - that's you. Every time a Blender user creates a piece of artwork, it justifies, even if just a little, the enormous amount of time that went into creating the software. We hope that by picking up this book, you are on your way to creating something amazing to share with the world.
+Dirilislah Blender 2.5 yang banyak mengubah tampilan dan cara pakai Blender. Perubahan ini membutuhkan perencanaan dan pengembangan selama bertahun-tahun. Blender 2.5 menandai tonggak sejarah dari sejarah Blender. Bagi user yang datang dari seri 2.4x, antarmukanya terlihat sangat berbeda: menu item diatur ulang, shoftcut keyboard diganti, bahwa color scheme bawaan sudah berubah dari warna abu-abu yang *boring* menjadi warna abu yang tidak terlalu *boring*. Blender 2.5 didesain agar lebih intuitif, lebih cepat, dan juga lebih mudah untuk dipelajari dibanding pendahulunya. 
 
+Blender menggunakan bahasa pemrograman Python untuk *scripting*-nya. Dengan Python kita bisa mengubah perilaku Blender, menambah fungsionalitasnya, serta yang paling penting, mengontrol game engine-nya. Mengetahui bagaimana membuat program bukan syarat untuk menggunakan Blender, tapi mengetahui cara menggunakan Python akan membuat kita menjadi game-maker yang lebih cakap.
 
+[![Blender Commit statistics form 2003 to 2012](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-03.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-03.png)
 
----
+Tentu saja, software ada untuk melayani pengguna - yaitu pembaca. Setiap kali seorang pengguna Blender membuat sebuah karya, karya ini membalas, meskipun sangat sedikit, waktu dan usaha untuk membuat software ini. Kami berharap dengan membaca buku ini, pembaca dapat membuat sesuai yang menarik untuk dibagikan dengan dunia.
 
-## About Blender <a id="About_Blender"></a>
+------
 
-Chances are, you already know that Blender is an open source 3D software that is capable of modeling, animation, rendering, compositing, and producing a game all in one package. Even if you are not sure what each of those term means, don't fret!
+## About Blender
 
-Let's break down the term "open source 3D animation software."
+Bisa jadi, pembaca sudah tahu bahwa Blender adalah software animasi 3D open source yang mampu melakukan modeling, animasi, rendering, compositing, dan producing sebuah game di satu package. Meskipun belum tahu apa maksud dari istilah-istilah tadi, jangan gentar!
 
-"Open source" means that Blender's source code is available for anyone to access and modify. The most obvious advantage to open source software is that as an artist, you can use Blender for free, for non-commercial as well as commercial work. As a developer, you are allowed to modify Blender in any way you want to suit your specific needs. But open source does not mean that anyone can make malicious changes to the Blender code without approval. Blender is licensed under the GNU Public License v2 (GPL2). In a nutshell, it means that Blender can be copied, modified, and if re-shared, the changes in the source code have to be available and licensed in an equivalent license.
+Mari kita bahas istilah "software animasi 3D open source/open source 3D animation software". 
 
-> **Caveat**:
+"Open source" artinya source code Blender tersedia bagi siapapun untuk membaca dan mengubahnya. Keuntungan yang paling kelihatan dari software open source adalah sebagai seorang artis, kita bisa menggunakan Blender tanpa biaya baik untuk non-komersil maupun komersil. Sebagai seorang developer, pembaca juga boleh memodifikasi Blender sesuai kebutuhan. Tapi, open source tidak berarti semua orang dapat melakukan perubahan ke kode-kode Blender tanpa persetujuan terlebih dahulu. Blender menggunakan lisensi GNU Public License v2 (GPL2). Singkatnya, hal ini berarti bahwa Blender dapat disalin, dimodifikasi, dan apabila dibagikan ulang, perubahan-perubahan pada source code harus dilisensikan dengan lisensi yang sama. 
+
+> **Peringatan**:
 >
-> Before you publish a game using Blender, you should understand the limitations of the GPL. This topic is covered in Chapter 9, "Publishing and Beyond."
+> Sebelum mempublikasikan sebuah game menggunakan Blender, pembaca harus mengetahui batasan lisensi GPL. Topik ini dibahas di Bab 9, "Publishing and Beyond".
 
-The term "3D" means three dimensions. The world we live in is 3D because it has height, width, and depth. Compare this with 2D software programs such as Photoshop, GIMP or Krita, the content-creation process in Blender is done in a 3D space, not on a 2D canvas.
+Istilah "3D" berarti tiga dimensi. Dunia yang kita tinggali adalah 3D karena memiliki tinggi, lebar, dan kedalaman. Dibandingkan dengan program 2D berikut, Photoshop, GIMP atau Krita, proses pembuatan konten di Blender dilakukan di ruang 3D bukan kanvas 2D.
 
-![2D vs. 3D](../figures/Chapter1/Fig01-04.jpg)
+[![2D vs. 3D](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-04.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-04.jpg)
 
-The term "animation" is perhaps a misleading one. Although we tend to attribute the term "computer animated" to any film that is done by a computer, we should remember that Blender isn't limited to just creating animation. Blender is capable of modeling, rendering, compositing, and making games just as well as it can animate.
+Istilah "animasi" mungkin agak berbeda dengan yang pembaca tahu. Meskipun kita biasa menghubungkan istilah "animasi komputer" untuk setiap film yang dibuat dengan komputer, kita harus ingat bahwa Blender tidak terbatas hanya untuk membuat animasi. Blender juga dapat melakukan modeling, rendering, compositing, dan membuat game sebaik ia membuat animasi.
 
-The term "software" suggests that Blender is a tool-a tool that allows you to create animations and games. So this book will treat it as such-merely a means to an end. We will help you understand each of Blender's features, so you will know how to use the software to achieve what you want.
+Istilah "software" menunjukkan bawah Blender adalah sebuah aplikasi komputer untuk membuat animasi dan game. Jadi buku ini akan membantu pembaca memahami setiap fitur Blender sehingga pembaca dapat memanfaatkannya untuk membuat apapun yang pembaca inginkan. 
 
-As this is a book about the tools, this is not a book on game design. Topics such as storyline, art direction, and game playability are beyond the scope of this book. Blender is merely a platform that enables you to make art.
+Buku ini membahas Blender dari sisi aplikasinya bukan buku tentang desain game. Topik-topik seperti *storyline, art direction, * dan *game playability* diluar cakupan buku ini. Blender hanyalah sebuah alat yang membantu kita membuat sebuah karya seni. 
 
-### About the Game Engine <a id="About_the_Game_Engine"></a>
+### About the Game Engine
 
-Blender is a multi-faceted tool. This book will focus on one aspect of it: the game-creation process. If you are new to Blender, learning the game engine means you will pick up basic modeling, animation, and other necessary skills along the way. If you already have Blender experience, great! The skills you already know will make transitioning to the game engine much easier.
+Blender merupakan alat dengan banyak kegunaan. Buku ini akan membahas salah satu aspeknya saja: proses pembuatan game. Jika pembaca baru mengenal BLender, mempelajari game engine juga berarti pembaca akan ikut mempelajari dasar-dasar modeling, animasi, dan kemampuan lain seiring jalan. Jika sudah memiliki pengalaman menggunakan Blender, kemampuan yang pembaca miliki akan membuat transisi ke game engine menjadi lebih mudah. 
 
-Compared to some of the commercial game engines available today, the Blender Game Engine (BGE or GE for short) is relatively simple. Is that a bad thing? Not necessarily. A simple platform like Blender is very easy to learn, and yet it's flexible enough to do a lot.
+Dibandingkan game engine komersial yang tersedia saat ini, Blender Game Engine (BGE atau GE saja) relatif lebih sederhana. Apakah hal tersebut merupakan hal buruk? Tidak juga. Sistem sederhana seperti Blender sangat mudah untuk dipelajari tapi juga cukup fleksibel untuk melakukan banyak hal. 
 
-To give you some idea of what the game engine is capable of, Chapter 10, "Case Studies," is dedicated to projects that were done in the GE.
+Untuk memberikan gambaran apa kemampuan game engine ini, Bab 10, "Case Studies", ditulis untuk menunjukkan proyek yang dibuat dengan GE.
 
-### Future of BGE <a id="Future_of_BGE"></a>
+### Future of BGE
 
-One downside to writing about software is that it's constantly improving. Even today, projects such as [UPBGE](https://upbge.org/) is promising to dramatically improve the features and functionalities of the Blender Game Engine. We will try our best to keep this ebook as up-to-date as possible. What you should do as a reader, is to make sure you are always using the latest version of Blender.
+Satu kesulitan menulis tentang software adalah karena sifatnya yang akan terus berkembang. Bahkan hari ini, proyek seperti [UPBGE](https://upbge.org/) cukup menjanjinkan untuk meningkatkan fitur dan fungsionalitas Blender Game Engine.Kami akan mencoba membuat ebook ini se-*up-to-date* mungkin. Yang pembaca cukup lakukan ialah menggunakan versi terbaru dari Blender. 
 
 > **Test Builds**
 >
-> If the latest version is not fresh good enough, you can find official daily builds on [builder.blender.org](https://builder.blender.org/download/). Additionally, many non-official test builds of Blender are available from [graphicall.org](http://graphicall.org/).
+> Bila belum cukup puas dengan versi terbaru, pembaca bisa menemukan versi yang lebih baru lagi di  [builder.blender.org](https://builder.blender.org/download/). Sebagai tambahan, banyak test builds dari pihak ketiga yang tersedia juga di  [graphicall.org](http://graphicall.org/).
 
-## 3D Basics <a id="3D_Basics"></a>
+## 3D Basics
 
-If you haven't used any 3D application before, the terms modeling, animation, and rendering might be foreign to you. So before you go off to create the spectacular game that you always wanted to make, let's have a quick refresher on the basics of computer graphics. You don't have to endure the boring section below if you are already know what RGB stands for and the difference between Cartesian and Gaussian.
+Jika pembaca belum pernah menggunakan aplikasi 3D sebelumnya, istilah modeling, animasi, dan rendering mungkin terdengar asing. Jadi sebelum mulai membuat game spektakuler yang selalu ingin pembaca buat, mari kita pelajari dulu dasar-dasar grafika komputer. Pembaca tidak perlu menyelami pembahasan di bawah ini jika sudah paham apa maksud RGB dan perbedaan antara Cartesian dan Gaussian.
 
-The knowledge in this section is universal and applies to all other 3D applications. So even if you are coming from a different application, the same concepts drive all of them.
+Pengetahuan di bagian ini bersifat umum dan dapat diaplikasikan ke semua aplikasi 3D lainnya. Jadi meskipun pembaca datang dari aplikasi yang berbeda, konsep dasarnya tetap sama.
 
-### Coordinate System <a id="Coordinate_System"></a>
+### Coordinate System
 
-<img alt="The three axes illustrated" src="../figures/Chapter1/Fig01-05.png" width="33%" align="right">
-We live in a three-dimensional world that has width, height, and depth. So to represent anything that resembles real life as a virtual world inside a computer, we need to think and work in three dimensions. The most common system used is called the Cartesian coordinate system, where the three dimensions are represented by X, Y, and Z, laid out as intersecting planes. Where the three axes meet is called the _origin_. You can think of the origin as the center of your digital universe. A single position in space is represented by a set of numbers that corresponds to its position from the origin: thus (2, -4, 8) is a point in space that is 2 units from the origin along the X axis, 4 units from the origin along the -Y axis, and 8 units up in the Z direction.
+[![The three axes illustrated](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-05.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-05.png)
 
+### Points, Edges, Triangles, and Meshes
 
-### Points, Edges, Triangles, and Meshes <a id="Points,_Edges,_Triangles,_and_Meshes"></a>
+Meskipun kita menentukan sebuah posisi di ruang menggunakan koordinat XYZ, satu titik (atau sebuah "vertex," istilah yang paling sering digunakan di grafika komputer) tidak lah begitu berguna karena satu titik terlalu kecil. Akan tetapi, kita bisa menggabungkan vertex ini dengan vertex lain untuk membuat sebuah garis (yang dikenal juga dengan istilah "edge"). Sebuah edge juga tidak begitu terlihat, sehingga kita membuat vertex baru kemudian menggabungkan ketiganya dengan baris lain lalu mengisi bagian tengahnya. Sekarang, ada sesuatu yang lebih menarik muncul, sebuah triangle (juga dikenal dengan istilah "face"). Dengan menghubungkan beberapa face kita dapat membuat bentuk lain yang menghasilkan bentuk dengan istilah "mesh" atau "model". Gambar di bawah menunjukkan bagaimana sebuah mes dapat dipecah menjadi face, lalu edges, dan terakhir, vertices. 
 
-Although we can define a position in space using the XYZ coordinates, a single point (or a "vertex," as it's more commonly known in computer graphics) is not terribly useful; after all, you can't see a dot that is infinitesimally small. But you can join this vertex with another vertex to form a line (also known as an "edge"). An edge by itself still wouldn't be very visible, so you create another vertex and join all three vertices together with lines and fill in the middle. Suddenly, something far more interesting is created[md]a triangle (also known as a "face")! By linking multiple faces together, you can create any shape, the result of which is called a "mesh" or "model." Figure below shows how a mesh can be broken down into faces, then edges, and ultimately, as vertices.
+[![Teapot, cube, face, edge and vertex.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-06.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-06.jpg)
 
-![Teapot, cube, face, edge and vertex.](../figures/Chapter1/Fig01-06.jpg)
+Mengapa triangle sangat penting? Ternyata, grafik komputer modern menggunakan triangle sebagai dasar untuk hampir semua jenis bentuk alias shape. Sebuah persegi panjang, (dikenal juga dengan istilah quadrangle atau quad) sebetulnya terdiri dari dua triangle. Sebuah kotak/kubus/dadu terdiri dari enam persegi yang saling terhubung. 
 
-Why is the triangle so important? Turns out, modern computer graphics use the triangle as the basic building block for almost any shape. A rectangular plane (also known as a _quadrangle_, or more commonly a _quad_) is simply two triangles arranged side by side. A cube is simply six squares put together. Even a sphere is just made of tiny facelets arranged into a ball shape.
+Di Blender, sebuah mesh dapat dibuat dengan kombinasi triangle, quad, atau n-gon. Keuntungan menggunakan n-gon adalah kemampuan untuk mengambil topologi yang rapi saat modeling. Tanpa n-gon, beberapa area dari sebuah model (seperti jendela atau dinding) akan membutuhkan lebih banyak triangle atau quad seperti pada gambar di bawah. Meski n-gon memudahkan proses modeling, Blender tetap mengubahnya menjadi triangle saat game dijalankan. 
 
-<img alt="The same cylinder cap can be made up of triangles, quads, or an n-gon." src="../figures/Chapter1/Fig01-07.jpg" width="50%" align="right">
+[![The same cylinder cap can be made up of triangles, quads, or an n-gon.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-07.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-07.jpg)
 
-In Blender, a mesh can be made from a combination of triangles, quads, or n-gons. The benefit of n-gons is their ability to retain a clean topology while modeling. Without n-gons, certain areas of a model (such as a window on a wall) would require a higher number of triangles or quads to approximate, as shown below. While n-gons make modeling easier in some cases, Blender still converts them to triangles when you start the game.
+Proses membuat sebuah mesh dengan menyusun vertice, edge, dan face disebut dengan modeling. Blender memiliki banyak tool untuk membantu kita membuat bentuk geometri yang diinginkan. 
 
-The process of creating a mesh by rearranging vertices, edges, and faces is called _modeling_. Blender has many tools that help artists define the geometry they want.
+Perlu dicatat bahwa tidak seperti di dunia nyata, model-model poligonal tidak memiliki volume. Mereka hanya kulit yang terdiri dari face yang saling terhubung dan membentuk suatu objek, tapi di dalamnya selalu kosong. 
 
-It is worth noting that unlike the real world, polygonal models do not have volumes. They are just a shell made of interconnected faces that take the shape of the object, but the inside of the object is always "hollow."
+[![Surface normals are displayed as cyan lines protruding from the faces.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-08.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-08.jpg)
 
-<img alt="Surface normals are displayed as cyan lines protruding from the faces." src="../figures/Chapter1/Fig01-08.jpg" width="50%" align="right">
-
-Another concept that a modeler will likely encounter is surface normals, or "normals" for short. Normal is a property of each face that indicates the direction a polygon is facing. Because normals are used for shading computation of the surface, ideally all the normals for a mesh should be pointed "outward." Wrongly oriented normals can cause the mesh to show up as black or invisible. Fortunately, there is a Make Normals Consistent function in Blender that can usually resolve the issue. Figure 1.8 shows how normals are presented in Blender.
-
+Konsep lain yang mungkin akan ditemukan seorang modeler adalah "surface normal", atau "normal" saja. Normal adalah properti setiap face yang mengindikasikan arah yang dihadapi oleh sebuah poligon. Karena normal dipakai untuk melakukan shading computation dari sebuah permukaan/surface, idealnya semua normal untuk sebuah mesh harus bernilai "outward". Salah mengarahkan normal dapat membuat mesh menampilkan warna hitam atau tidak terlihat. Untungnya, ada fungsi Make Normals Consistent di Blender yang biasanya akan menyelesaikan permasalahan ini. Gambar 1.8 menunjukkan bagaimana normal ditampilkan di Blender.
 
 > **Beyond Polygons**
 >
-> Technically, there are other approaches to computer graphics that do not rely on triangles or polygons, such as NURBS (Non-uniform rational B-spline) and voxel (short for VOlumetric piXEL). But polygon modeling and rendering is by far the most common, and it is the only supported method in the game engine.
+> Secara teknis ada beberapa pendekatan untuk grafika komputer yang tidak bergantung pada triangle atau poligon seperti NURBS (Non-uniform rational B-spline) dan voxel (singkatan dari VOlumetric piXEL). Tapi polygon modeling dan rendering masih menjadih solusi yang paling umum dan menjadi satu-satunya metode yang didukung oleh game engine ini. 
 
-### Basic Transforms <a id="Basic_Transforms"></a>
+### Basic Transforms
 
-The three basic transforms that you should be familiar with are:
+Ada tiga basic transform yang perlu diketahui yaitu:
 
-* **Translation:** The moving of an object in any direction, without rotating it.
-* **Scaling:** The resizing of an object around a point.
-* **Rotation:** The rotating of an object around a point.
+- **Translation:** Menggeser sebuah objek ke arah manapun tanpa memutarnya.
+- **Scaling:** Mengubah ukuran suatu objek dari satu titik.
+- **Rotation:** Memutar sebuah objek dari satu titik.
 
-These three are the most common manipulations you will encounter. They are illustrated below.
+Ketiganya merupakan manipulasi paling sering yang akan kita temui. Perhatikan ilustrasi di bawah.
 
-![Translation, scaling, and rotation.](../figures/Chapter1/Fig01-09.jpg)
+[![Translation, scaling, and rotation.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-09.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-09.jpg)
 
-### Materials and Textures <a id="Materials_and_Textures"></a>
+### Materials and Textures
 
-Using polygons, you can define the shape of a mesh. To alter the color and appearance of it, you need to apply materials to the object. Material controls the color, shininess, bumpiness, and even transparency of the object. These variables ultimately all serve to add details to the object.
+Menggunakan poligon, kita bisa mendefinisikan bentuk dari sebuah mesh. Untuk mengubah warna dan tapilannya, kita perlu menggaplikasikan material ke objek tersebut. Material mengontrol warna, terang, pantulan, bahkan transparansi sebuah objek. Variabel-variabel ini menambahkan detail ke objek tersebut. 
 
-Often, changing the color is not enough to make a surface look realistic. This is where textures come in. Texturing is a common technique used to add color and detail to a mesh by wrapping the mesh with an image, like a decal. Imagine a toy globe: if you carefully peel off the paper map that is glued onto the plastic ball and lay it out flat on the table, that map would be the texture, and the plastic ball would be the mesh. The projection of the 2D image onto a 3D mesh is called _texture mapping_. Texture mapping can be an automatic process, using one of the predefined projections, or a manual process, which uses a UV layout to map the 2D image onto the 3D mesh. Figure 1.10 illustrates how an image is mapped onto a model.
+Seringkali, mengubah warna tidak cukup untuk membuat sebuah permukaan terlihat realistis. Disinilah dimana texture datang. Texturing merupakan teknik yang umum dipakai untuk menambah warna dan detail ke sebuah mes dengan membungkus mesh tersebut dengan sebuah gambar, seperti stiker. Bayangkan sebuah globe mainan, jika pembaca menyobek kertas yang membungkus globe tersebut secara hati-hati, maka akan terlihat bahwa kertas tersebut adalah sebuah texture dengan bolanya sebagai mesh. Proyeksi gambar 2D menjadi mesh 3D disebut dengan texture mapping. Texture mapping dapat dioperasikan secara otomatis menggunakan fungsi proyeksi yang sudah ada atu dilakukan secara manual yang menggunakan UV layout untuk memetakan gambar 2D ke mesh 3D. Gambar 1.10 mengilustrasikan bagaimana sebuah gambar dipetakan ke sebuah model. 
 
-![Meshes with texture applied.](../figures/Chapter1/Fig01-10.jpg)
+[![Meshes with texture applied.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-10.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-10.jpg)
 
+Secara tradisional, sebuah texture akan mengubah warna sebuah permukaan. Tapi bukan hanya itu saja yang ia bisa lakukan, texture juga bisa mengubah properti lain dari sebuah permukaan misalnya transparansi, daya pantul, bahkan daya pantulnya untuk membuat ilusi sebuah permukaan yang lebih detail. 
 
-Traditionally, a texture changes the color of a surface. But that's not all it can do: textures can also be used to alter other properties of the surface such as its transparency, reflectivity, and even bumpiness to create the illusion of a much more detailed surface.
+[![From left to right: diffuse map, normal map, and specular map.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-11.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-11.jpg)
 
-<img alt="From left to right: diffuse map, normal map, and specular map." src="../figures/Chapter1/Fig01-11.jpg" width="50%" align="right">
+Sebuah diffuse map mengontrol warna dasar sebuah permukaan. Sebuah normal map mengontrol permukaan normal sebuah objek, membuat efek pantul dengan mengubah bagaimana sebuah cahaya direfleksikan dari objek tersebut. Sebuah specular map mengontrol refleksi specular dari sebuah objek, membuatnya terlihat terang ditempat tertentu dan redup ditempat lain. Sebuah texture map juga bisa memiliki pixel yang transparan, merender bagian tertentu dari objek menjadi transparan. 
 
-A diffuse map controls the base color of the surface. A normal map controls the surface normal of an object, creating a bumpy effect by changing the way the light is reflected off the object. A specular map controls the specular reflection of an object, making it look shiny in certain places and dull in others. A texture map can also have transparent pixels, rendering part of the object transparent.
+Secara umum, texture adalah file gambar. Tapi ada juga cara lain untuk membentuk sebuah permukaan, misalnya dengan menggunakan procedural texture. Procedural texture berbeda dengan sebuah gambar karena ia dibuat oleh sebuah algoritma secara real time, bukan dari gambar yang sudah jadi. Blender game engine belum mendukung fitur procedural textures.
 
-Generally, textures are image files. But there are also other ways to texture a surface, such as using a procedural texture. Procedural texture differs from an image in that it's generated by an algorithm in real time, rather than from a pre-made image file. The Blender game engine does not support procedural textures yet.
+### Lights
 
-### Lights <a id="Lights"></a>
+Semua yang pembaca lihat merupakan hasil dari cahaya yang masuk ke dalam mata, tanpa cahaya, dunia akan kelam. Seperti itu pula pentingnya sebuah cahaya di dunia maya. Dengan adanya cahaya, maka akan ada pula sebuah bayangan. Bayangan mungkin bukan sesuatu yang penting untuk dipikirkan sehari-hari, tapi peran sebuah bayangan dan gambar membuat sebuah perbedaan yang amat besar untuk sebuah scene yang ditampilkan. 
 
-Everything you see is the result of light hitting your eyes-without lights, the world would be pitch black. Likewise, light is just as important in a virtual world. With light comes shadow as well. Shadow might not be something that you think about every day, but the interplay of shadow and light makes a huge difference in how the scene is presented.
+Disebagian besar aplikasi 3D, ada beberapa jenis pencahayaan yang tersedia, setiap tipe memiliki keuntungan dan kekurangan. Contoh, sebuah Spot lamp meniru sebuah lampu dengan arah cahaya yang kerucut, sebuah sun lamp meniru sumber cahaya dari jarak yang jauh. Lamp di blender diperlakukan seperti objek biasa, mereka bisa diposisikan dan diputar seperti objek lain. Gambar 1.12 menunjukkan bagainana perbedaan lamp yang ada di Blender. 
 
-<img alt="From left: Lamp, Sun, Spot lamp, Hemi lamp, and Area lamp." src="../figures/Chapter1/Fig01-12.png" width="50%" align="right">
+[![From left: Lamp, Sun, Spot lamp, Hemi lamp, and Area lamp.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-12.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-12.png)
 
-In most 3D applications, there are several different types of light available to the artist; each type has its advantages and disadvantages. For example, a Spot lamp approximates a lamp with a conical influence; a sun lamp approximates a light source from infinitely far away. Lamps in Blender are treated like regular objects: they can be positioned and rotated just like any other object. Figure 1.12 shows how different lamps look in Blender.
+Anggap pencahayaan/lighting sebagai sesuatu yang membuat sebuah scene terlihat. Pencahayaan yang baik dapat menampilkan bagian yang penting dan menyembunyikan bagian yang tidak terlalu penting dengan bayangan sehingga terlihat lebih realitastis. 
 
-Think of lighting as more than something that makes your scene visible. Good lighting can enhance the purpose of the scene by highlighting details while hiding irrelevant areas in shadow. Skillful placement of lighting also adds drama and realism to the scene, making an otherwise boring scene look visually exciting.
+### Camera
 
-### Camera <a id="Camera"></a>
+[![Camera objects](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-13.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-13.png)
 
-<img alt="Camera objects" src="../figures/Chapter1/Fig01-13.png" width="50%" align="right">
+Saat membuat tampilan 3D, kita melihat sebuah dunia virtual dari sudut pandang serba tahu. Dalam mode ini kita bisa melihat dan mengubah dunia 3D ini dari sudut manapun seperti seorang sutradara film berjalan keliling untuk mengatur sesuatu. Setelah game dimulai, pemain harus melihat game tersebut dari predetermined camera/sebuah kamera yang sudah ditentukan. Catat bahwa predetermined camera bukan berarti kamera tersebut sudah fixed alias tidak akan berubah-ubah. Hampir semua jenis game memiliki kamera yang bereaksi terhadap masukan pemain. Dalam game action, camera akan mengikuti gerakan karakter dari belakang, dalam game straetegi, kamera mungkin melihat dari atas, di game platformer, kamera biasanya mengikuti dari sisi samping. 
 
-When you are creating a 3D scene, you are looking at the virtual world from an omniscient view. In this mode, you can view and edit the world from any angle[md]just like a movie director walking around a set in order to adjust things. Once the game starts, the player must view the game through a predetermined camera. Note that a predetermined camera does not mean the camera is fixed; almost all games have a camera that reacts to a player's input. In an action game, the camera tends to follow the character from behind; in a strategy game, the camera might be hovering high above, looking down; in a platformer, the camera is usually looking at the scene from the side.
-
-A camera is also treated as a regular object in Blender, so you can manipulate its location and orientation just as you can with any other object.
-
+Kamera juga dianggap sebagai sebuah objek biasa oleh Blender sehingga kita bisa memanipulasi lokasi dan posisi seperti objek lain.
 
 > **Drawing and Composition for Visual Storytellers**
 >
-> Speaking of lights and cameras, this is the part where we point out the wonderful book by Marcos Mateu-Mestre called Framed Ink. The book uses tons of beautiful drawings to illustrate the many key principles in visual storytelling.
+> Berbicara tentang pencahayaan dan kamera, ada buku berjudul Framed Ink yang ditulis oleh Marcos Mateu-Mestre. Buku ini menggunakan banyak gambar untuk enjelaskan prinsip-prinsip visual storytelling.
 
-### Animation <a id="Animation"></a>
+### Animation
 
-In this context, _animation_ refers to the technique of making things change over time. For example, animation can involve moving an object, deforming it, or changing its color. To set up an animation, you create "keyframes," which are snapshots in time that store specific values pertaining to the animation. The software can then automatically interpolate in between those values to create a smooth transition. The image below shows Blender's Dopesheet Editor. The Dopesheet allows you to see the various properties that change during an animation: the horizontal axis represents time; the vertical axis shows the various properties, such as location or rotation that are keyframed.
+Dalam konteks buku ini, animation merujuk pada teknik yang membuat sesuatu berubah seiring dengan berjalannya waktu. Misal, animasi dapat terdiri dari menggeser objek, mengubah bentuknya, atau mengubah wanrnya. Untuk mengatur sebuah animasi, kita akan membuat "keyframe", yang merupakan snapshot disatu waktu yang menyimpan nilai tertentu yang berkaitan dengan animasi tadi. Software lalu dapat menambahkan sesuatu diantara nilai-nilai tadi untuk melakukan transisi yang halus. Gambar di bawha menujukan Dopesheet Editor milik Blender. Dopesheet memungkinkan kita untuk melihat beberapa properti yang berubah saat sebuah animasi terjadi, sumbu horisontal merepresentasikan waktu sedangkan sumbu vertikal menampilkan properti-properti, misal lokasi dan rotasi.
 
-![Dopesheet Editor: each diamond shape is a keyframe.](../figures/Chapter1/Fig01-14.png)
+[![Dopesheet Editor: each diamond shape is a keyframe.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-14.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-14.png)
 
-<img alt="LocRotScale animation" src="../figures/Chapter1/Fig01-15.png" width="50%" align="right">
-<br><br>
-The easiest way to animate is to alter the location, rotation, and scaling of an object over time. For example, by altering these variables, you can realistically animate the movement of a bouncing ball. Keep in mind that the curves represent the value of the channels (in this case xyz location) of the ball, not the actual motion path of the ball itself.
+[![LocRotScale animation](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-15.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-15.png)
 
-<br><br>
+[![Armature animation](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-16.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-16.png)
 
-<img alt="Armature animation" src="../figures/Chapter1/Fig01-16.png" width="33%" align="left">
-<br><br>
-To animate something more complicated, such as a human, it's not enough to just move, rotate, and scale the object as a whole. This is where armatures come in. Armatures are skeletons that can be "inserted" into a model to control the model's deformation. Using this system, you can create complex yet organic-looking animations.
+[![Shape keys animation.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-17.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-17.jpg)
 
-<br><br><br><br>
-<img alt="Shape keys animation." src="../figures/Chapter1/Fig01-17.jpg" width="50%" align="right">
-<br>
-A third way to animate is using shape keys. Shape keys are snapshots of the mesh in different shapes. They are often used to animate nuanced changes that cannot be otherwise easily animated with armatures.
+Cara ketiga untuk menganimasi ialah menggunakan shape keys. Shape keys adalah snapshot dari mesh di beberapa bentuk. Cara ini biasanay dipakai untuk menganimasikan perubahan yang tidak bisa dianimasikan dengan cara biasa. 
 
 
-<img alt="Procedural physics-based motion." src="../figures/Chapter1/Fig01-18.jpg" width="33%" align="left">
-<br>
-Finally, keep in mind that making objects move doesn't always have to be a manual process. You can also make objects move by using the physics engine (see Chapter 6).
 
-<br>
+[![Procedural physics-based motion.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-18.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-18.jpg)
 
-### Game <a id="Game"></a>
+### Game
 
-So far, we have talked about 3D at length. But how does the game engine fit into? Well, a game engine simply takes the existing 3D assets and attaches a "brain" to them so the objects know how to respond to events. The  "brain" can be in the form of logic bricks (which can perform different actions depending on the user input), scripts (which can extend the functionality of logic bricks), or other physical properties of an object (such as rigid body settings to make an object tumble and fall realistically).
+Sejauh ii, kita sudah cukup banyak membahas tentang 3D. Tapi bagaimana game engine memanfaatkan teori-teori tadi? Jadi, sebuah game engine sebetulnya hanya mengambil aset 3D yang sudah ada lalu memberikan "otak" ke objek tersebut sehingga mereka tahu bagaimana merespon suatu event. "Otak" ini dapat berubah logic bricks (melakukan akse berdasarkan input user), skrip (yang dapat menambah fungsionalitas logic bricks), atau properti fisik dari sebuah objek (misal memberikan pengaturan rigid body sehingga sebuah objek dapat jatuh secara realistis).
 
-![Game = Object + Logic.](../figures/Chapter1/Fig01-19.jpg)
+[![Game = Object + Logic.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-19.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-19.jpg)
 
-A game engine is made up of many distinct components:
+Sebuah game engine terdiri dari beberapa komponen:
 
-- **Rendering Engine** : Turns the 3D scene you've built (including models, lights, and camera) into an image to be displayed onscreen.
-- **Physics** : Handles collisions and physical simulations of objects.
-- **Logic/Scripting** : The brain behind a game[md]it reacts to the user input, makes decisions, and keeps track of what's going on in the game.
-- **Sound** : Produces the audio events.
+- **Rendering Engine** : Mengubah tampilan 3D yang sudah dibuat (termasuk models, lights, dan camera) menjadi gambar yang ditampilkan di layar.
+- **Physics** : Menangani simulasi fisika seperti tabrakan dari objek-objek yang ada. 
+- **Logic/Scripting** : Otak dibelakang sebuah game yang bereaksi pada masukan pengguna, menentukan arah, dan mengingat apa yang terjadi di dalam game. 
+- **Sound** : Memproduksi event audio. 
 
-The above list is not meant to be exhaustive, but it should give you an idea of what a game engine does. The Blender game engine gives you a lot of control over each of these components, which you will learn one by one in later chapters.
+Daftar di atas belum lengkap tapi dapat memberikan ide dasar apa yang dilakukan sebuah game engine. Blender game engine memberikan kita kontrol setiap komponen-komponen ini yang akan kita pelajari satu per satu. 
 
 > **Quality vs. Performance**
 >
-> Making a video game is a constant balancing act between quality and performance. As artists, you want to make the virtual world as rich and detailed as possible; on the other hand, you need to make sure the game can run smoothly for people who might not have top-of-the-line computers. Throughout the process of game-making, you will run into cases where you have to make a decision whether to prioritize the visual quality or the performance of the game. You will also learn tricks to achieve high-quality visual without compromising the performance, as well as how to optimize the game by identifying what is slowing it down.
+> Membuat sebuah video game akan menyeimbangkan antara kualitas dan performa. Sebagai seorang desainer, kita ingin membuat dunia virtual yang kaya dan sedetail mungkin, disisi lain, kita juga harus memastikan game berjalan dengan halus bagi orang yang mungkin tidak memiliki komputer berspesifikasi tinggi. 
+>
+> Sepanjang proses pembuatan game, kita akan menemui kasus dimana kita harus mengambil keputusan untuk memprioritaskan kualitas visual atau performa game. Kita juga akan mempelajari trik untuk mencapai visual yang bagus tnapa mengorbankan performa juga bagaimana mengoptimalkan bagian game yang lambat. 
 
-## Setting up <a id="Setting_up"></a>
+## Setting up
 
-It's finally time to dive into Blender! From now on, you may be better off reading the book with the computer at your side. In this section, we will give you a short tour of Blender, just enough to get you familiar with the software.
+Akhirnya tiba waktu untuk menyelami dunia Blender! Mulai dari sini sampai ke bab terakhir, akan lebih baik jika pembaca berada didepan komputer. Penulis di bab ini penulis akan menujukkan bagaimana tampilan Blender sehingga pembaca dapat lebih mengeal aplikasi ini. 
 
-### Installation <a id="Installation"></a>
+### Installation
 
-Blender runs on Windows, Mac OS X, and Linux, You can find the Blender installer for your operating system from www.blender.org. The complete Blender download size is about 100MB.
+Blender berjalan di Windows, Mac OS X, dan Linux. Pembaca dapat mengunduh pemasang Blender untuk sistem operasi yang digunakan dari [www.blender.org](http://www.blender.org). Ukuran lengkap aplikasi Blender sekitar 100MB.
 
-Go ahead and install Blender. Start the application once it's installed.
+Silahkan unduh dan pasang Blender. Mulai aplikasi setelah terpasang
 
 > **Installation Not Required**
 >
-> Technically, Blender does not need to be installed before it can be used. The installer is available for convenience only. Blender will run from any location. You can even copy it to a USB storage device and carry it with you, so you'll never be apart from your favorite program. Although, by default, Blender saves some user settings to the user directory.
+> Secara teknis Blender tidak perlu dipasang sebelum digunakan. Berkas pemasang yang kita unduh dibuat untuk mempermudah kita saja. Blender dapat dijalankan dari tempat mana saja. Kita bahkan bisa menyalin foldernya ke USB sehingga bisa membuka Blender kapan pun dimana pun. Meskipun, secara default, Blender akan menyimpan beberapa pengaturan di direktori user. 
 
-Even though you need Blender to develop the game, Blender games can be packaged as stand-alone applications, so that others playing it don't need to install anything. See Chapter 9, "Publishing and Beyond," for more details.
+Meskipun kita membutuhkan Blender untuk membuat game, game yang kita buat dapat dipaketkan sebagai *stand alone application* sehingga orang lain tidak perlu memasang aplikasi tambahan apapun selain game tersebut. Lihat Bab 9, "Publishing and Beyond", untuk lebih detailnya.
 
-### System Requirements <a id="System_Requirements"></a>
+### System Requirements
 
-Blender has no explicit system requirement. The performance of the software is dependent on the complexity of the project. Needless to say, the faster your computer is, the better Blender will run.
+Blender tidak punya permintaan khusus akan spesifikasi komputer yang ia butuhkan. Performa aplikasi ini bergantung pada kompleksitas proyek. Jadi, semakin kencang komputer kita, semakin baik pula Blender akan bekerja.
 
-## Blender Basics <a id="Blender_Basics"></a>
+## Blender Basics
 
-When you start Blender, you will be greeted with the splash screen.Although you can customize all aspect of Blender, in this book, we will assume you are using the default Blender settings and shortcuts.
+Saat memulai Blender, kita akan disambut dengan sebuah *splash screen.* Buku ini akan mengasumsikan pembaca menggunakan pengaturan dan shortcut bawaan Blender.
 
-Clicking anywhere else to dismiss the splash screen, you are presented with an empty workspace like this:
+Klik di mana saja untuk menutup *splash screen*, kita akan melihat tampilan *empty workspace* seperti ini:
 
-![Blender default workspace.](../figures/Chapter1/Fig01-20.jpg)
+[![Blender default workspace.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-20.jpg)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-20.jpg)
 
-The Blender window is divided into Editors. Each Editor region can be resized, moved, and changed to display a specific set of content. For now, let's focus on the default setup.
+Jendel Blender dibagi menjadi Editor-Editor. Setiap bagian Editor dapat diubah ukurannya, dipindah, dan diganti untuk menampilkan konten tertentu. Untuk saat ini, mari kita biarkan seperti apa adanya.
 
-#### Main Menu <a id="Main_Menu"></a>
+#### Main Menu
 
-At the top of the screen is the main menu, which offers basic functionalities such as Open, Save, and Help. Furthermore, the main menu controls the view for the rest of the Blender window. The Render Engine option in the middle of the menu controls how the interface is configured.
+Dibagian atas layar adalah  main menu yang memberikan fungsionalitas standar seperti Open, Save, dan Help. Selebihnya, main menu mengontrol tampilan dari jendela Blender yang lain. Opsi Render Engine ditengah menu mngontrol bagaimana antarmuka dikonfigurasi. 
 
-<img alt="Selecting the Game Engine" src="../figures/Chapter1/Fig01-21.png" width="40%" align="left">
-By default, Cycles Render is selected. In this mode, the interface is configured for doing 3D modeling, animation, and rendering with Cycles. But let's switch it to the Blender Game mode. Click the drop-down menu and select Blender Game from the list. This setting will unlock certain features that are not visible normally, and it also hides features that are not available in the Blender game engine.
+[![Selecting the Game Engine](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-21.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-21.png)
 
+#### 3D Viewport
 
-#### 3D Viewport <a id="3D_Viewport"></a>
+Bagian yang paling banyak memakan tempat di layar adalah 3D Viewport. Disini kita bisa melihat dunia 3D yang kita buat dan saat menguji game. Untuk saat ini, silahkan eksplor 3D Viewport menggunakan middle mouse button (tombol yang ada di tengah mouse, biasanya ada di *scroll wheel*) dengan cara klik tahan dan geser (pengguna Mac dapat menggunakan two-finger rotate gesture di trackpad). Scene bawaannya memiliki tiga objek, sebuah cube (kubus), camera (kamera), dan light (pencahayaan). Untuk memilih salah satu objek, klik kanan. Objek yang terpilih akan memiliki tanda kuning. 
 
-Occupying the majority of the screen is a 3D Viewport. Here you can see the 3D world you created and test the game. For now, feel free to explore the 3D Viewport by holding down your middle mouse button over the 3D Viewport and dragging the mouse; the view should rotate with the mouse movement. (Mac users can use the two-finger rotate gesture on the trackpad) The default scene contains three objects: a cube, a camera, and a light. To select one of the objects, right-click on it. The selected object is highlighted in yellow.
+> **Basic Navigation Controls**
 
->**Basic Navigation Controls**
+> Klik dan tahan middle mouse button untuk memutar 3D view. Scroll untuk melakukan zoom. Klik kanan  untuk memilih sebuah objek 3D. 
 
->Press and hold the middle mouse button to rotate the 3D view. Scroll the mouse wheel to zoom in the 3D view. Right-click to select a 3D object. Selected objects are highlighted in yellow.
+[![Number pad keyboard layout.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-23.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-23.png)
 
+Untuk pindah view lebih cepat (side, top, front, dll.), numper pad dapat dipakai.
 
-<img alt="Number pad keyboard layout." src="../figures/Chapter1/Fig01-23.png" width="25%" align="left">
-<br>
-Another common setup for the 3D Viewport is to split the view into four quadrants: top view, side view, front view, and a perspective view. You can turn on Quad view by pressing Ctrl+Alt+Q with the mouse over the 3D Viewport (see Figure 1.22). Press the same key combination to go back to the single view.
+#### Outliner
 
-To quickly snap to one of the predetermined views (side, top, front, and so on), the number pad is the way to go.
+[![Outliner](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-20b.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-20b.png)
 
-<br><br>
+Disebelah kanan layar ada dua Editor. Dibagian atas adalah Outliner, ia memiliki daftar seluruh data yang ada di file Blender saat ini. Untuk proyek besar, Outliner akan menjadi tool paling *mantep* untuk mengorganisir scene. Untuk saat ini, kita bisa mengabaikannya dulu.
 
+#### Properties Editor
 
-#### Outliner <a id="Outliner"></a>
+[![Properties Editor icons.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-24.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-24.png)
 
-<img alt="Outliner" src="../figures/Chapter1/Fig01-20b.png" width="33%" align="right">
+#### Timeline
 
-To the right of the screen are two editors. The top portion is the Outliner, which contains a listing of all the data in the current Blender file. For a large project, the Outliner is an indispensable tool for organizing your scene. For now, you can safely ignore it.
+Dibagian bawah layar adalah jendela timeline yang akan sangat berguna saat kita mulai membuat animasi. [![Timeline](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-20c.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-20c.png)
 
-#### Properties Editor <a id="Properties_Editor"></a>
+#### Workspace Customization
 
+Tampilan layan bawaan seperti yang sudah dijelaskan sebelumnya, diatur untuk penggunaan secara umum. Ada waktu tertentu dimana perubahan layout menjadi penting untuk dilakukan. Untuk menggantinya, gunakan Screens layout drop-down menu dari main menu.
 
-<img alt="Properties Editor icons." src="../figures/Chapter1/Fig01-24.png" width="33%" align="right">
-Under the Outliner on the right, you have the Properties Editor. Here you can access global settings for the file, as well as settings for individual objects. This is one of the most frequently used panels in Blender, after the 3D view perhaps. The Properties Editor is context sensitive, which means it will automatically display different content, depending on the object that is active. Take a closer look at the row of icons at the top of the Properties Editor, as shown in Figure 1.24. These tabs organize the properties into groups, with the more general settings on the left-most tab, and the more specific settings on the right.
+Selain layout yang sudah ditentukan, kita bisa memiliki layout sesuai keinginan. Kita bisa membagi satu editor untuk ditempati oleh dua editor bersamaan, dll. 
 
-
-#### Timeline <a id="Timeline"></a>
-
-At the very bottom of the screen is a timeline window, which will be useful when you start making animations.
-![Timeline](../figures/Chapter1/Fig01-20c.png)
-
-
-#### Workspace Customization <a id="Workspace_Customization"></a>
-
-The default screen, as described previously, is set up for general use. At some point, it becomes necessary to change the screen layout to accomplish other tasks. To select a different layout, use the Screens layout drop-down menu from the main menu.
-
-Apart from the predefined screen layouts, you can customize the screen layout however you like. You can either split an existing editor into two or merge two adjacent editors together.
-
->**Editor, Region, and Area**
+> **Editor, Region, and Area**
 >
->A region within the Blender windows is called an _editor_. An editor displays a specific set of content and tools. Common areas include: 3D View, Properties Editor, UV/Image Editor, and Logic Brick Editor.
+> Sebauh area di dalam jendela Blender disebut dengan Editor. Sebuah editor menampilkan konten dan tools spesifik. Misalnya: 3D View, Properties Editor, UV/Image Editor, dan Logic Brick Editor. 
+
+Gambar 1.25 menampilkan sebuah area yang di bagi menjadi dua. Kita bisa men-*drag* bagian pojok kanan atas atau bawah.  
+
+[![Area Splitting](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-25.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-25.png)
 
 
 
-Figure 1.25 shows one area split into two. You can do it by dragging the top corner of the area to the right or bottom
+[![Editor selection.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-27.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-27.png)
 
-![Area Splitting](../figures/Chapter1/Fig01-25.png)
+[![Dopesheet, Image Editor, and Logic Brick Editor.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-28.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-28.png)
 
-To merge two adjacent areas into one is exactly the same as shown in Figure 1.25, but it is done in reverse order. Optionally, you can click with the right mouse button in the edge of the area you want to split or join, and select the option in the Area Options pop-up menu.
+### More on the 3D View
 
+3D View adalah tempat dimana kita akan menghabiskan sebagian besar waktu kita, jadi mari kita lihat dengan lebih detail. Kita sudah mempelajari beberapa cara untuk melakukan navigasi scene di bab ini, dengan menggunakan mouse dan keyboard. 
 
-<img alt="Editor selection." src="../figures/Chapter1/Fig01-27.png" width="25%" align="left">
-<br>
-Not only can you change the size and layout of the editor, but the type of editor can also be changed. As you can see in Figure 1.27, the left-most icon in the header can be used to change the editor type.
+#### Viewport Shading Modes
 
-<img alt="Dopesheet, Image Editor, and Logic Brick Editor." src="../figures/Chapter1/Fig01-28.png" width="45%" align="right">
-Almost everything a studio needs to create the game is integrated into a single interface: you can create the game, test the game, and play the game all from the same program. This means that, as an artist, you can create a game in the shortest time possible, without having to worry about importing and exporting files between different applications. As a programmer, you won't have to switch back and forth between different software just to test your code. Figure 1.28 shows some screenshots of different editors that you will be using throughout the book.
+[![Drawing Modes](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-29.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-29.png)
 
+- **Bounding Box** : Merepresentasikan semua objek sebagai wireframe boundary. Berguna saat scene menjadi kompleks. 
+- **Wireframe** : Menampilkan seluruh objek sebagai wirefram sehingga kita bisa melihat objek tembu pandang. 
+- **Solid** : Menampilkan seluruh objek dengan permukaan yang solid, biasanya dipakai saat modeling
+- **Textured** : Menampilkan seluruh objek dengan permukaan yang solid ditambah dengan texture dan lightning yang akurat. Biasanya dipakai untuk melakukan preview scene. 
 
-### More on the 3D View <a id="More_on_the_3D_View"></a>
-
-The 3D view is where you will spend most of your time, so let's take a look at it in a bit more detail. You've already learned a few ways to navigate around the scene earlier in this chapter, using both the mouse and the keyboard.
-
-#### Viewport Shading Modes <a id="Viewport_Shading_Modes"></a>
-
-<img alt="Drawing Modes" src="../figures/Chapter1/Fig01-29.png" width="25%" align="right">
-Let's look at the four different Viewport Shading modes available in the 3D view. They are used to change the way the scene is displayed onscreen. The four modes are:
-
-- **Bounding Box** : Represents all objects as a wireframe boundary. Useful for when the scene gets really complex.
-- **Wireframe** : Draws all objects as wireframe, which allows you to see through objects.
-- **Solid** : Draws all objects as solid faces, which is commonly used when modeling.
-- **Textured** : Draws all objects as solid faces, also with texture and accurate lighting. This is useful for previewing the scene.
-
-The two most commonly used Shading modes are Wireframe and Solid. Therefore, they are assigned to a keyboard toggle for easy access. Press the Z key to toggle between Wireframe and Solid View modes. Additionally, you can Press Alt+Z to toggle between Solid and Textured view modes.
+Dua mode Shading yang paling sering dipakai adalah Wireframe dan Solid. Oleh karena itu, keduanya diberikan tombol keyboard untuk akses cepat. Tekan tombol Z untuk mengganti mode antara Wireframe dan Solid. Sebagai atmbahan, kita bisa menekan Alt+Z untuk mengaanti mode antara Solid dan Textured. 
 
 > **Standing Out**
 >
-> Individual objects can also override the Viewport Shading mode via a setting under the Properties Editor > Object > Display > Type.
+> Objek individu dapat menimpa model Viewport Sharing lewat pengaturan Properties Editor > Object > Display > Type. 
+
+### Editing Modes
+
+Disebelah kiri dari Shading mode selector adalah Editing Mode selector.
+
+- **Object Mode** : Mode bawaan yang memungkinkan kita memanipulasi keseluruhan objek di scene. Dari mode ini kita bisa memilih objek apapun di scene, memindahkannya, memutarnya, juga mengubah ukurannya. Malah, hampir semua aksi selain modeling bisa dilakukan di Object mode. 
+- **Edit Mode**: Mode ini dapat dilihat sebagai kebalikan dari Object mode. Mode ini memungkinkan kita untuk mengubah geometri dari sebuah objek. Saat melakukan modeling, pembaca mungkin akan memutuhkan Edit mode. Untuk alasan ini, Edit mode tidak tersedia saat objek yang tidak dapat di-edit terpilih (misalnya camera atau lamp).
+
+Untuk berpindah antara Object mode dan Edit mode, tekan tombol tab. 
+
+Sebagai tambahan untuk dua mode editing yang baru saja kita bahas, ada beberapa mode lain yang jarang dipakai. 
+
+- **Sculpt Mode** : Hanya tersedia untuk objek Mesh. Memungkinkan modifikasi sebuah mesh seperti mengotak-atik tanah liat. 
 
 
+- **Vertex** , **Weight,** dan **Texture Paint Mode** : Hanya tersedia untuk objek Mesh. Mode-mode ini memungkinkan penentuan warna atau obot ke mesh.
+- **Pose Mode** : Dipakai untuk menganimasi bones disebuah armature.
 
-### Editing Modes <a id="Editing_Modes"></a>
+Edit mode dan Object mode sejauh ini merupakan mode yang paling umum dipakai untuk melakukan editting, jadi kita akan menahan diri dari membahas mode lain terlalu dalam.
 
-To the left of the Shading mode selector is the Editing Mode selector.
+### Keyboard and Mouse
 
-- **Object Mode** : The default mode, which allows the manipulation of objects in the scene as a whole. From this mode, you can select any of the objects in the scene, and move, rotate, and scale them. In fact, almost everything apart from modeling can be done from Object mode.
-- **Edit Mode**: This mode can be seen as the counterpart to Object mode. It allows you to edit the underlying geometry of the object. If you are modeling, you'll probably want to be in Edit mode. For this reason, Edit mode is not available when a non-editable object is selected (for example, a camera or lamp).
-
-To switch between Object mode and Edit mode, press the tab key.
-
-In addition to the two editing modes we just discussed, there are a few other modes that are less commonly used.
-
-- **Sculpt Mode** : Only available for Mesh objects. Allows modifications to the mesh as if it were clay.
-- **Vertex** , **Weight,** and **Texture Paint Mode** : Only available for Mesh objects. These modes allow the assignment of color or weight to the mesh.
-- **Pose Mode** : Is used to animate bones in an armature.
-
-Edit mode and Object mode are by far the most commonly used editing modes, so we will refrain from diving too deeply into the other modes for now.
-
-### Keyboard and Mouse <a id="Keyboard_and_Mouse"></a>
-
-The joke is that to move an object in Blender, you have to press the G key, which stands for "movinG." This gag stems from the fact that to a beginner, many of the shortcuts in Blender seem counterintuitive. However, there is a very good reason why "G" is preferred over "M." In this case, the G key can be easily accessed on the keyboard by the left hand while the right hand is on the mouse. Also, officially, G stands for Grab.
-
-
+Ada *joke* di Blender yang mengatakan bahwa untuk memindahkan sebuah objek kita harus menekan tombol G yang berasal dari "movinG". *Joke* ini muncul karena penentuan *shortcut* yang agak berbeda dengan aplikasi lain. Namun, ada beberapa alasan mengapa "G" dipilih dibanding "M". Dalam kasus ini, G lebih cepat diakses oleh tangan kiri saat tangan kanan menggunakan mouse. Selain itu, G merupakan huruf dari kata Grab. 
 
 > **Think Different**
 >
-> By default, the Mac keyboard uses Command instead of Control as the default modifier key. So whenever you see Ctrl+Something in this book, mentally map it to Cmd if you are using a Jobsian product.
+> Keyboard Mac menggunakan Command bukannya Control. Jadi setiap kali pembaca melihat Ctrl+Sesuatu di buku ini, cukup gunakan Cmd. 
 >
-> Additionally, Blender has good support for multi-touch gestures on OS X. You can pinch to zoom, rotate to orbit around, and pan around.
+> Sebagai tambahan, Blender memiliki dukungan multi-touch gesture di OS X. Kita bisa melakukan pinch to zoom, rotate to orbit around, dan pan around. 
 
+Mari kita mulai dengan *shortcut* yang penggunaannya sama dengan aplikasi-aplikasi lain:
 
+- **Ctrl + S:** Save File
+- **Ctrl + O:** Open File
+- **Ctrl + N:** New File
+- **Ctrl + Z:** Undo
+- **Ctrl + Shift + Z:** Redo
+- **Ctrl + Q:** Close(Quit) Application
 
-Let's start with some shortcuts that work the way you would expect:
+Shortcut dapat bekerja di manapun didalam Blender, efeknya terjadi secara global. 
 
-* **Ctrl + S:** Save File
-* **Ctrl + O:** Open File
-* **Ctrl + N:** New File
-* **Ctrl + Z:** Undo
-* **Ctrl + Shift + Z:** Redo
-* **Ctrl + Q:** Close(Quit) Application
+Untuk memanipulasi objek di 3D view, pada umumnya kita harus memilih salah satu objek dulu:
 
-The above shortcuts work anywhere within Blender: they are effectively global. Unfortunately, the familiarity ends here.
+- **Right-click:** Memilih objek
+- **Shift + Right-click:** Memperluas seleksi ke beberapa objek
+- **A:** Pilih semua
 
-To manipulate an object in the 3D view, generally you have to select it at first:
+Semua aksi di atas "reversible." Jadi jika sesuatu telah terpilih, saat di right-click lagi maka kita melepas pemilihan objek tersebut. Jika semua objek sudah dipilih, menekan tombol A lagi akan melepas pemilihan semua objek.
 
-- **Right-click:** Select object
-- **Shift + Right-click:** Extend selection to multiple objects
-- **A:** Select all
-
-All of the actions above are "reversible." If something is already selected, right-clicking on it will deselect it. If all the objects are already selected, pressing A will deselect all.
-
-Once an object is selected, you can start manipulating it. The keyboard shortcuts below correspond to the three most basic transforms:
+Setelah semua objek terpilih, kita bisa mulai memanipulasinya. Shortcut keyboard di bawah untuk melakukan tiga teknik transform paling dasar:
 
 - **G:** Start Grabbing
 - **S:** Start Scaling
@@ -438,106 +400,100 @@ Once an object is selected, you can start manipulating it. The keyboard shortcut
 - **Left-click:** Confirm transformation
 - **Enter:** Confirm transformation
 
-Pressing one of the keys will start the transformation, and then you can move your mouse to control the degree of the effect. To finalize the transformation, left-click the mouse or press Enter.
+Menekan salah satu tombol akan memuali transformasi, lalu kita bisa mulai menggeser mouse untuk mengontrol tingkat efek yang diberikan pada suatu objek. Untuk menyelesaikan proses transformasi, left-click atau tekan Enter.
 
-### Search <a id="Search"></a>
+### Search
 
-<img alt="The Search Box" src="../figures/Chapter1/Fig01-30.png" width="30%" align="right">
+[![The Search Box](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-30.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-30.png)
 
-The final tip that you will learn is the search functionality in Blender. If you are unable to recall how to invoke a certain operation, whether through a button or a keyboard shortcut, a quick way to find it is by using the search functionality. Key in a few letters of what you are looking for, and the result should appear as shown in Figure 1.30.
+Tips terakhir yang akan kita pelajari adalah pencarian di Blender. Jika pembaca lupa untuk melakukan operasi tertentu baik itu melalui sebuah button atau shortcut keyboard, cara tercepat ialah dengan mencarinya menggunakan fungsi search di Blender. Tuliskan beberapa huruf untuk sesuatu yang kita cari maka hasilnya akan tampil seperti pada gambar 1.30.
 
-Tapping on the spacebar from anywhere will bring out a search box that contains a list of actions.
+Tekan sombol spasi dimana saja untuk menampilkan sebuah kotak pencarian ini. 
 
+Implementasi pencarian saat ini belum begitu *context-aware*, jadi terkadang ada beberapa operasi yang tidak muncul di context yang aktif. 
 
+### Blender Philosophy
 
-A word of caution, though: the current implementation of the search is not very context-aware, so sometimes operations that are not permitted in the active context might show up.
+Blender didesain dengan sebuah filosofi. Memahami filosofi Blender memungkinkan kita untuk menggunakannya sebagaimana dimaksudkan oleh pengembang sehingga kita bisa melakukan navigasi didalam Blender lebih cepat dan lebih efisien. 
 
-### Blender Philosophy <a id="Blender_Philosophy"></a>
+### Interface
 
-Blender is designed with certain philosophies in mind. Understanding these will allow you to use Blender the way it is intended, which allows you to navigate around Blender faster and work more efficiently.
+Karena Blender awalnya dibuat sebagai software in-house, antarmukanya dibuat untuk memaksimalkan kecepatan dan efisiensi untuk pengguna yang sudah menguasainya. Sejak Blender 2.5, banyak usaha telah dilakukan untuk membuat antarmuka Blender lebih *user-friendly*. Blender bisa jadi tidak seperti program-program lain yang sudah pernah pembaca pakai, termasuk software 3D lain. Untungnya, antarmuka Blender sangat konsisten. Ini artinya apabila pembaca sudah pernah mempelajari sesuatu sekali, pembaca bisa menggunakannya dibagian manapun di program ini. 
 
-Let the brainwashing begin!
+### Keyboard
 
-### Interface <a id="Interface"></a>
+Saking banyaknya perintah yang dapat dilakukan oleh Blender, memanggil fungsi tertentu melalui tombol keyboard pada umumnya lebih cepat dibanding menggunakan mouse untuk mencarinya. Saat mengikuti sisa isi buku ini, berikan perhatian pada tombol shortcut yang dipakai karena Blender didesain untuk bekerja lebih cepat setelah kita mempelajari shortcutnya. 
 
-Because Blender was originally created as an in-house software, its interface is designed to maximize speed and efficiency for users who have mastered it. Since Blender 2.5, a lot of work has been done to make the interface more user-friendly. That said, Blender is probably unlike any other program you've used before, including other kinds of 3D software. Luckily, the Blender interface is very consistent within the application. This means that once you learn to do something, you'll be able to use it in another part of the program.
+Shortcut Blender dioptimalisasi untuk keyboard QWERTY full-sized. Number pad (yang sayangnya tidak tersedia disebagian besar laptop) dipakai untuk melakukan navigasi cepat di 3D scene. Pengguna laptop biasanya harus menekan tombol tertentu di keyboard (seperti Fn atau toggle) untuk menggunakan number pad. Sebagai solusi, klik File > User Preferences (Ctrl + Alt + U), lalu masuk ke tab INput kemudian beri tanda centang pada "Emulate Numpad" untuk menggunakan tombol 1 sampai 0 tanpa menggunakan Numpad. Jika ingin menggunakan opsi ini secara permanen, klik tombol "Save User Settings". 
 
-### Keyboard <a id="Keyboard"></a>
+[![Emulate Numpad](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-30-1.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-30-1.png)
 
-Because of the large number of commands Blender is capable of performing, invoking a function through a quick tap on the keyboard is generally faster than using the mouse to find the menu entry. As you follow through the rest of this section, pay special attention to the shortcut keys that are used, because Blender is designed to let you work fast once you learn the shortcuts.
+[![3D Navigator.](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-31.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-31.png)
 
+### Mouse
 
-Blender's keyboard shortcuts are optimized for a full-sized English QWERTY keyboard. The number pad (which, unfortunately, is not present on many laptops) is used to quickly navigate around the 3D scene. Laptop users usually have to press extra keys on their keyboard (such as the Fn key or a toggle) in order to simulate a number pad key. As a solution, go to File > User Preferences (Ctrl + Alt + U), then switch to Input tab and enable "Emulate Numpad" option to use main 1 to 0 keys instead of Numpad keys. If you want this setting remain permanently, click on the "Save User Settings" button.
-![Emulate Numpad](../figures/Chapter1/Fig01-30-1.png)
+Blender didesain untuk menggunakan mouse dengan tiga tombol atau sebuah mouse dengan dua tombol dan satu scroll wheel. Meskipun ada sebuah opsi untuk menyiasasi middle-mouse button (saat mengklik scroll wheel), buku ini akan mengasumsikan pembaca bekerja dengan sebuah mouse dengan tiga tombol untuk lebih memudah
 
-<img alt="3D Navigator." src="../figures/Chapter1/Fig01-31.png" width="20%" align="right">
-Alternatively, Blender also has an add-on called "3D Navigation" that provides an easier way to navigate around the world for people without a number pad. To enable the 3D navigation plug-in to help you navigate around the 3D Viewport quickly, go to File > User Preferences > Add-Ons, and turn on 3D Views: 3D Navigation. Then you can switch views quickly from the 3D view's Toolshelf.
-
-### Mouse <a id="Mouse"></a>
-
-Blender is designed for a three-button mouse: a mouse with two buttons and a scroll wheel. Although there is an option to emulate the middle-mouse button (when you click on the scroll wheel), this book will assume that you are working with a three-button mouse for convenience.
-
-> **How to Emulate a Three-Button Mouse**
+> **How to Emulate a Thre-Button Mouse**
 >
-> If you don't have a three-button mouse, you can use the Alt+Left mouse button combination to emulate the middle mouse button. To enable this feature, go to File > User Preferences > Input and turn on Emulate 3 Button Mouse.
+> Jika tidak punya mouse tiga tombol, gunakan Alt+Left mouse button untuk mengemulasi tombol tengah. Untuk mengaktifkan fitur ini klik File > User Preferences > Input dan beri tanda centang pada Emulate 3 Button Mouse.
 
-### Context <a id="Context"></a>
+### Context
 
-In Blender, the actions you can perform at any given time are limited to the current state of Blender, also known collectively as the " context." For example, certain operations can only be invoked when you have an object selected; the Property Editors change, depending on which object is selected; the effect of the keyboard shortcuts even changes, depending on where your mouse is positioned. This context-sensitive nature lets you focus on the task at hand by only providing you with options that makes sense at the time. This is Blender's way of preventing the interface from getting too cluttered.
+Di Blender, aksi yang dapat dilakukan disatu waktu dibatasi oleh status Blender saat itu. Status ini dikenal dengan nama "context". Misalnya, operasi tertentu hanya bisa dipanggil jika sebuah objek sedang terseleksi; Properti editor akan berubah bergantung pada objek mana yang terseleksi; efek dari shortcut keyboard bahwa bisa berubah tergantung posisi mouse. Sifatnya yang sensitif akan context membuat kita fokus pada pekerjaan dengan opsi-opsi yang hanya bisa dipakai saat itu saja. Ini adalah cara Blender untuk menjaga antarmuka dari hal-hal yang tidak perlu. 
 
-The "context" usually refers to one or a combination of the following:
+"Context" biasanya mengacu pada salah satu atau kombinasi dari daftar berikut:
 
-- **Active rendering engine:** Blender Render, Blender Games, and Cycles Render are the default three.
-- **Active editor:** The active editor is defined as the window subdivision that the mouse cursor is hovering over. Shortcut keys often have different effects, depending on which editor the mouse is over.
-- **Active object:** The active object is defined as the object that is most recently selected.
-- **Selected object:** All the objects that have been selected (highlighted). Keep in mind that there can be more than one selected object, but only one active object.
-- **Editing mode:** Blender has six different modes of editing. Two of the most commonly used are the Edit mode and the Object mode. In Object mode, you can manipulate objects as a whole. In Edit mode, you can change the shape of a mesh. In each mode, there is a unique set of tools and options at your disposal. You will learn about the other four modes (Sculpt, Vertex Paint, Texture Paint, Weight Paint) in later chapters.
+- **Active rendering engine:** Blender Render, Blender Games, dan Cycles Render adalah tiga bawaan Blender.
+- **Active editor:** Active editor ada bagian jendela Blender dimana kursor mouse sedang aktif. Shoftcut biasanya akan memiliki efek berbeda bergantung pada editor yang ada di bawah kursor mouse.
+- **Active object:** Active object adalah objek yang sedang diseleksi.
+- **Selected object:** Semua objek yang telah diseleksi. Perlu diingat bahwa kita bisa memilih lebih dari satu objek secara bersamaan, tapi hanya bisa ada satu objek yang aktif (active object). 
+- **Editing mode:** Blender memiliki enam mode berbeda untuk editing. Dua diantaranya yang paling umum dipakai adalah Edit mode dan Object mode. Di Object mode, kita bisa memanipulasi objek sebagai satu kesatuan. Di Edit mode kita bisa mengubah bentuk mesh. Di setiap mode, ada beberapa kumpulan tools dan opsi yang bisa dipakai dan akan kita pelajari empat diantaranya (Sculpt, Vertex Paint, Texture Paint, Weight Paint). 
 
-### Datablocks <a id="Datablocks"></a>
+### Datablock
 
-Often, a single Blender file contains hundreds of objects, each with different colors, textures, and animations. How is all this organized?
+Seringkali, satu file Blender memiliki ratusan objek dengan warna, texture, dan animasi yang berbeda-beda. bagaimana semua objek ini diorganisir?
 
-Blender uses "data blocks" to represent content stored within a Blender file. Each data block represents a collection of data or settings. Some common datablock types you will encounter are Object datablock, Mesh datablock, Material datablock, Texture datablock, and Image datablock.
+Blender menggunakan "data blocks" untuk merepresentasikan konten yang disimpan didalam sebuah file Blender. Setiap data block merepresentasikan sebuah koleksi data atau setting. Beberapa tipe datablock yang akan kita temui adalah Object datablock, Mesh datablock, Material datablock, Texture datablock, dan Image datablock. 
 
+Dalam rangka mengurangi kompleksitas program, Blender mengorganisir data block ini dalam bentuk hirarki. Di level paling atas adalah scenes yang dapat memiliki beberapa world, setiap word ini bisa memiliki banyak objek (objek bisa berupa mesh, lamp, camera, dll.). Jika objek tersebut adalah mesh, maka Mesh datablock akan ditempelkan. Jika objek tersebut adalah lamp, maka Lamp datablock akan ditempelkan ke objek tersebut. 
 
-<img alt="Datablock hierarchy" src="../figures/Chapter1/Fig01-32.png" width="30%" align="right">
-
-In order to reduce the apparent complexity of the program, Blender further organizes data blocks into hierarchies. At the top level are scenes, which can have a number of worlds, each of which can have any number of objects (objects can be a mesh, a lamp, a camera, and so on). If the object is a mesh, then a Mesh datablock is attached to it. If the object is a lamp, then a Lamp datablock is attached to the object.
-
-An example of a datablock hierarchy chain is shown in Figure 1.32: Scene > Object > Mesh > Material > Texture > Image
+Sebuah contoh hirarki datablock ini bisa dilihat di gambar 1.32: Scene > Object > Mesh > Material > Texture > Image
 
 
-Throughout the Blender interface, you will run into many datablock managers. They all look like Figure 1.33.
 
+[![Datablock hierarchy](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-32.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-32.png)
 
-<img alt="Datablock Sharing" src="../figures/Chapter1/Fig01-33.png" width="30%" align="left">
+Kita akan sering bertemu dengan datablock manager diantarmuka Blender. Mereka terlihat seperti pada gambar 1.33
 
-Because datablocks can be shared, copied, and reused, large scenes can be managed efficiently through the use of shared datablocks. Figure 1.33 shows a datablock that has been shared by three "users," as denoted by the number next to its name.
+[![Datablock Sharing](https://github.com/mikepan/GameEngineBook/raw/master/figures/Chapter1/Fig01-33.png)](https://github.com/mikepan/GameEngineBook/blob/master/figures/Chapter1/Fig01-33.png)
 
-### Parenting and Grouping <a id="Parenting_and_Grouping"></a>
+Karena datablock dapat dibagikan, disalin, dan digunakan ulang, scenes yang besar dapat diatur secara efisien dengan menggunakan shared datablocks. Gambar 1.33 menampilkan sebuah datablock yang dibagian oleh tiga "user", seperti yang ditampilkan oleh angka di sebelah namanya. 
 
-Grouping and parenting both allow you to introduce some form of order to the scene by setting up arbitrary relationships between different objects. But grouping and parenting work in different ways.
+### Parenting and Grouping
 
-Parenting is used to establish links between multiple objects so that basic transformations like location, rotation, and scaling are propagated from the parent to its children. This way, any transformation applied to the parent is automatically applied to all the children. Parenting is a useful way to "glue" different objects together so they behave as one.
+Grouping dan parenting memungkinkan kita untuk memberikan semacam urutan ke sebuah scene dengan mengaitkan satu objek dengan objek yang lain. Tapi grouping dan parenting bekerja dengan cara yang berbeda.
 
-To parent one object to another, simply select the object you want to be the child first.  If more than one object is to be a child, select all of them now. Lastly, select the object that you want to be the parent. Then press Ctrl+P to set parent.
+Parent dipakai untuk membuat sebuah tautan antara beberapa objek sehingga transformasi seperti lokasi, rotasi, dan penskalaan disebarkan dari parent ke children-nya. Dengan begini, setiap transformasi yang diberikan kepada parent secara otomatis akan diberikan pula kepada children. dengan menggunakan Parenting kita bisa menempelkan beberapa objek bersamaan sehingga seolah-olah mereka adalah satu objek.
 
-An object can only have one parent object, but a parent object can have many children.
+Untuk melakukannya, pertama pilih sebuah objek yang ingin dijadikan child dulu. Jika lebih dari satu objek ingin dijadikan child, pilih semuanya sekaligus. Terakhir, pilih satu objek yang akan dijadikan parent (pilihan terakhir). Setelah itu tekan Ctrl+P untuk mengatur parent. 
 
-Grouping can also be used to logically link objects in the scene together without any transformation constraints to the objects. Unlike parenting, grouping does not have a parent-child relationship; objects are simply members of a group.
+Sebuah objek hanya bisa memiliki satu parent, tapi sebuah parent dapat memiliki banyak children. 
 
-Select all the objects you want to group. Then press Ctrl+G to add them to a new group. You can also manage group membership from the Object Properties Editor.
+Grouping juga bisa dipakai untuk menautkan beberapa objek secara logika didalam sebuah scene tanpa ada pemaksaan transformasi. Tidak seperti parenting yang memiliki hubungan parent-child, grouping tidak memiliki hubung seperti itu, objek hanya sekedar member group saja. 
 
-Grouping, by itself, it not very useful. But groups can be quickly "instanced" as group instances. Group Instance is a very useful way to create multiple copies of objects without making actual copies of the objects. Grouping will also come in handy for asset management, which will be discussed in the next chapter.
+Pilih semua objek yang ingin dimasukkan ke dalam group yang sama lalu tekan Ctrl+G. Kita juga bisa mengatur keanggotaan group lewat Object Properties Editor.
 
-A single object can be in multiple groups. A group can have multiple objects.
+Group bisa dipakai untuk membuat salinan beberapa objek sekaligus tanpa membuatnya satu persatu. Grouping juga bisa bermanfaat untuk melakukan manajemen aset yang mana akan kita diskusikan di bab berikutnya. 
 
-### Backward Compatibility <a id="Backward_Compatibility"></a>
+Satu objek bisa memiliki beberapa group dan sebuah group bisa memiliki beberapa objek.
 
-Blender is designed so that older files can be opened with newer versions of Blender. But due to the rate that Blender matures, some unexpected behaviors are to be expected when you least expect them.
+### Backward Compatibility
 
-Due to the Blender Python API change in Blender 2.5, old scripts written for 2.4x will be broken in later versions of Blender. But by the time you are reading this, there should be enough new content available for you to find.
+Blender didesain sehingga file-file lama masih bisa dibuka dengan versi Blender yang baru. Namun, karena banyaknya hal baru yang ditambahkan ke Blender, beberapa hal tak terduga mungkin dapat terjadi. 
 
-## Onward <a id="Onward"></a>
+Karena API Python Blender berubah di Blender 2.5, skrip yang ditulis untuk 2.4x tidak akan berjalan dengan baik di versi Blender yang baru. Tapi, saat membaca buku ini, seharusnya sudah cukup banyak konten baru yang bisa pembaca temukan. 
 
-This concludes the crash course on Blender and the game engine. By now, you should have a cursory understanding of the function of a game engine and be familiar with the Blender interface. In the next chapter, you will get your hands dirty and build a simple game by following the step-by-step tutorial.
+## Onward
+
+Bagian ini menutup penjelasan dasar-dasar Blender dan game engine-nya. Sekarang, pembaca seharusnya sudah memiliki dasar-dasar pengetahuan fungsi dari sebuah game engine dan sudah akrab dengan antarmuka Blender. DI bab berikutnya kita akan mencoba membuat sebuah game sederhan dengan mengikuti tutorial ste-by-step.
